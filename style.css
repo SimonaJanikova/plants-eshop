@@ -194,3 +194,29 @@ nav ul li:hover {
     cursor: pointer;
     user-select: none;
 }
+
+
+/* REGISTRATION */
+
+.reg-password {
+    display: flex;
+    gap: 3rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group input {
+    width: 100%;
+}
+
+.reg-form-submit {
+    transition: background-color 0.3s ease;
+}
+
+.reg-form-submit:hover {
+        background-color: rgb(79, 87, 29);
+}
