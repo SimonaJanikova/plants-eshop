@@ -124,7 +124,7 @@ nav ul li:hover {
 
 /* LOGIN */
 
-#login-form {
+.login-form {
     width: 90%;
     max-width: 450px;
     margin: 7rem auto;
@@ -135,7 +135,7 @@ nav ul li:hover {
     padding: 0;
 }
 
-#login-form form {
+.login-form form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -146,8 +146,8 @@ nav ul li:hover {
     margin-bottom: 0.5rem;
 }
 
-#login-form input[type="email"],
-#login-form input[type="password"] {
+.login-form input[type="email"],
+.login-form input[type="password"] {
     width: 100%;
     padding: 15px;
     border-radius: 5px;
@@ -156,6 +156,7 @@ nav ul li:hover {
     box-sizing: border-box;
     margin-bottom: 1rem;
 }
+
 
 .reg-form-submit {
     background-color: rgba(94, 104, 33, 1);
@@ -167,7 +168,7 @@ nav ul li:hover {
     transition: background-color 0.3s ease;
 }
 
-#login-form-btn:hover {
+.login-form-btn:hover {
     background-color: rgb(79, 87, 29);
 }
 
@@ -219,4 +220,18 @@ nav ul li:hover {
 
 .reg-form-submit:hover {
         background-color: rgb(79, 87, 29);
+}
+
+/*REG-FORM JAVASCRIPT */
+
+#error-container:empty {
+    display: none;
+}
+
+#error-container {
+    background-color: rgb(224, 178, 82);
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius:5px;
 }
