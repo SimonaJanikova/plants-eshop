@@ -7,9 +7,12 @@
 body {
     background-color: rgba(94, 104, 33, 0.09);
     font-family: 'Manrope', sans-serif;
+}
+
+.container {
     max-width: 1400px;
-    margin: 0 auto;  
-    padding-top: 1rem;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /*HEADER*/
@@ -160,7 +163,7 @@ nav ul li:hover {
 
 .reg-form-submit {
     background-color: rgba(94, 104, 33, 1);
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 15px;
     border-radius: 5px;
@@ -219,19 +222,45 @@ nav ul li:hover {
 }
 
 .reg-form-submit:hover {
-        background-color: rgb(79, 87, 29);
+    background-color: rgb(79, 87, 29);
 }
 
-/*REG-FORM JAVASCRIPT */
-
-#error-container:empty {
-    display: none;
+a {
+    text-decoration: none;
 }
 
-#error-container {
-    background-color: rgb(224, 178, 82);
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+  color: rgb(79, 87, 29);
+}
+
+/* FLASH MESSAGE */
+
+.flash-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(94, 104, 33, 0.85);
     color: rgb(255, 255, 255);
-    padding: 1rem;
-    margin-top: 1rem;
-    border-radius:5px;
+    padding: 0.5rem 1rem;
+}
+
+.flash-message p {
+    flex: 1;
+    text-align: center;
+}
+
+.close-banner-btn {
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.close-banner-btn:hover {
+    background-color: rgb(79, 87, 29);
 }
