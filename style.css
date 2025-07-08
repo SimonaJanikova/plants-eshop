@@ -82,6 +82,12 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+/* HAMBURGER-NAV*/
+
+.hamburger {
+    display: none;
+}
+
 /* MAIN */
 
 .main-section {
@@ -273,39 +279,3 @@ a:active {
     background-color: rgb(79, 87, 29);
 }
 
-@media (max-width: 768px) {
-    .main-section {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    
-  .sidebar {
-    margin-top: 2rem;
-    border-left: none;
-    padding-left: 0;
-  }
-
-  .content {
-    border-left: none;
-    padding-left: 0;
-  }
-
-  .mainFlower {
-    width: 100%;
-    height: auto;
-  }
-
-  .header-icons {
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-
-  .auth-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-  }
-}

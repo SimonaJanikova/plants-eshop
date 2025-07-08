@@ -35,3 +35,4 @@ const flashMeessage = document.querySelector(".flash-message");
 closeBtn.addEventListener("click", () => {
     flashMeessage.style.display = "none"; 
 });
+
