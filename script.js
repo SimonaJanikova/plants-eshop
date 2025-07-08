@@ -1,5 +1,5 @@
 //REGISTRATION FORM VALIDATION
-const regForm = document.getElementById("registration-form");
+/*const regForm = document.getElementById("registration-form");
 
 regForm.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -27,4 +27,11 @@ function showError(message) {
 
     errorContainer.innerHTML = "";
     errorContainer.appendChild(errorMsg);
-}
+}*/
+
+const closeBtn = document.getElementById("closeBannerBtn");
+const flashMeessage = document.querySelector(".flash-message");
+
+closeBtn.addEventListener("click", () => {
+    flashMeessage.style.display = "none"; 
+});
