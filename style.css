@@ -79,6 +79,10 @@ nav ul li a:hover {
     background-color: none;
 }
 
+.profile-btn {
+    display: none;
+}
+
 .icon-btn i {
     font-size: 1.2rem;
 }
@@ -351,5 +355,9 @@ a:active {
   .header-left,
   .sidebar {
     display: none;
+  }
+
+  .logo {
+    width: 150px;
   }
 }
