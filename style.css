@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
 body {
     background-color: rgba(94, 104, 33, 0.09);
     font-family: 'Manrope', sans-serif;
@@ -273,7 +279,7 @@ a:active {
     background-color: rgb(79, 87, 29);
 }
 
-/*MOBILE MENU*/
+/*MOBILE MENU HEADER*/
 
 .mobile-menu {
     position: fixed;
@@ -283,6 +289,7 @@ a:active {
     left: 0;
     width: 80vw;
     max-width: 300px;
+    height: 100vh;
     background-color: rgb(249, 249, 249);
     transform: translateX(-100%);
     transition: transform 0.3s ease;
