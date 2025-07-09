@@ -36,3 +36,18 @@ closeBtn.addEventListener("click", () => {
     flashMeessage.style.display = "none"; 
 });
 
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+
+hamburger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+});
+
+document.addEventListener("click", (event) => {
+    const clickInsideMenu = mobileMenu.contains(event.target);
+    const clickOnHamburger = hamburger.contains(event.target);
+
+    if (!clickInsideMenu && !clickOnHamburger) {
+        mobileMenu.classList.remove("active");
+    }
+});
