@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-
 body {
     background-color: rgba(94, 104, 33, 0.09);
     font-family: 'Manrope', sans-serif;
@@ -76,7 +70,7 @@ nav ul li a:hover {
     font-size: 1rem;
     color: black;
     text-decoration: none;
-    background-color: none;
+    background-color: transparent;
 }
 
 .profile-btn {
@@ -187,10 +181,6 @@ nav ul li a:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.login-form-btn:hover {
-    background-color: rgb(79, 87, 29);
 }
 
 .form-options {
@@ -339,11 +329,12 @@ a:active {
     font-size: 2rem;
     z-index: 1100;
     position: relative;
+    color: rgb(0, 0, 0);
 }
 
 @media (min-width: 768px) {
   .mobile-menu {
-    display: none !important;
+    display: none;
   }
 
   .hamburger {
@@ -372,11 +363,13 @@ a:active {
     display: flex;
     margin-left: 3rem;
   }
+
 .search-btn {
     display: none;
-}
+  }
 
   .header-icons {
     gap: 0.7rem;
+    background-color: transparent;
   }
 }
