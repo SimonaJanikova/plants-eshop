@@ -359,5 +359,24 @@ a:active {
 
   .logo {
     width: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .auth-links {
+    display: none;
+  }
+
+  .profile-btn {
+    display: flex;
+    margin-left: 3rem;
+  }
+.search-btn {
+    display: none;
+}
+
+  .header-icons {
+    gap: 0.7rem;
   }
 }
