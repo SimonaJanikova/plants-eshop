@@ -30,10 +30,10 @@ function showError(message) {
 }*/
 
 const closeBtn = document.getElementById("closeBannerBtn");
-const flashMeessage = document.querySelector(".flash-message");
+const flashMessage = document.querySelector(".flash-message");
 
 closeBtn.addEventListener("click", () => {
-    flashMeessage.style.display = "none"; 
+    flashMessage.style.display = "none"; 
 });
 
 const hamburger = document.getElementById("hamburger");
@@ -51,3 +51,9 @@ document.addEventListener("click", (event) => {
         mobileMenu.classList.remove("active");
     }
 });
+
+
+
+
+
+
