@@ -92,6 +92,7 @@ nav ul li a:hover {
 
 .main-section {
     display: flex;
+    flex-wrap: wrap;
     gap: 5rem;
     margin-top: 2rem;
     border-bottom: rgba(94, 104, 33, 1) solid 2px;
@@ -99,6 +100,8 @@ nav ul li a:hover {
 }
 
 .sidebar {
+    flex: 1 1 250px;
+    max-width: 300px;
     margin-top: 5rem;
 }
 
@@ -128,8 +131,8 @@ nav ul li a:hover {
 }
 
 .content {
-    width: 100%;
-    max-width: 1200px;
+    flex: 2 1 0;
+    max-width: 100%;
     border-left: rgba(94, 104, 33, 1) solid 2px;
     padding-left: 2rem;
 }
@@ -137,6 +140,8 @@ nav ul li a:hover {
 .mainFlower {
     width: 100%;
     height: auto;
+    max-width: 100%;
+    display: block;
 }
 
 /* LOGIN */
@@ -342,17 +347,30 @@ a:active {
   .hamburger {
     display: none;
   }
+
+  .mobile-search-container {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
+
+    body {
+        padding-top: 1rem;
+    }
+
+/* HEADER */
+
   .header-left,
-  .sidebar {
+  .sidebar,
+  .auth-links,
+  .search-btn {
     display: none;
   }
 
 .logo {
-    margin-left: 60px;
-   max-width: 150px;
+    max-width: 150px;
+    margin-left: 3rem;
 }
 
 a.logo {
@@ -362,21 +380,56 @@ a.logo {
    max-width: 150px;
 }
 
-  .auth-links {
-    display: none;
-  }
-
   .profile-btn {
     display: flex;
     margin-left: 3rem;
   }
 
-.search-btn {
-    display: none;
+  .header-icons {
+    gap: 0.5rem;
+    background-color: transparent;
   }
 
-  .header-icons {
-    gap: 0.7rem;
+/* MAIN IMG FLOWER */
+
+  .main-section {
+    border-bottom: none;
+  }
+
+  .content {
+    border-left: none;
+    padding-left: 0;
+  }
+
+/* MOBILE SEARCH*/
+
+  .mobile-search-container {
+    display: flex;
+    width: 90%;
+    margin: 1rem auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 18px;
+    background-color: rgba(252, 252, 250, 0.921);
+  }
+
+  .mobile-search-input {
+    flex: 1;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    outline: none;
     background-color: transparent;
+  }
+
+  .mobile-search-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    color: rgb(10, 49, 19);
+  }
+
+  .mobile-search-btn i{
+    pointer-events: none;
   }
 }
