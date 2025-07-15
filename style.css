@@ -339,6 +339,156 @@ a:active {
     color: rgb(0, 0, 0);
 }
 
+/* PRODUCTS SECTION */
+
+.product-section {
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+.product-scroll {
+    display: flex;
+    overflow-x: auto;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+/* PRODUCTS SECTION - CARD*/
+
+.product-card {
+    flex: 0 0 calc(100% / 5 - 0.8rem);
+    background: transparent;
+    text-align: center;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform:translateY(-5px);
+}
+
+.product-img {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.product-img img {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 20px;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.add-to-cart {
+    background-color: rgb(86, 126, 64);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    padding: 10px 20px;
+    background-image: url(images/cart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+}
+
+.wishlist-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background: url(images/heart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .wishlist-icon {
+    opacity: 1;
+}
+
+.wishlist-icon.is-toggled {
+    background-image: url(images/heart-fill.svg);
+    opacity: 1;
+}
+
+/*PRODUCT SECTION - SCROLL*/
+
+.product-slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.product-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* schovanie scrollbaru */
+}
+
+.product-scroll::-webkit-scrollbar {
+  display: none; /* schovanie scrollbaru */
+}
+
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(255, 255, 255,);
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+  display: none;
+  border-radius: 50%;
+}
+
+.scroll-arrow.left {
+  left: 0.5rem;
+}
+
+.scroll-arrow.right {
+  right: 0.5rem;
+}
+
+.product-slider-wrapper:hover .scroll-arrow {
+  display: block;
+}
+
+
 @media (min-width: 768px) {
   .mobile-menu {
     display: none;

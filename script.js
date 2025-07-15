@@ -52,8 +52,20 @@ document.addEventListener("click", (event) => {
     }
 });
 
+const scrollContainer = document.querySelector(".product-scroll");
+const arrows = document.querySelectorAll(".scroll-arrow");
+
+arrows.forEach(arrow => {
+    arrow.addEventListener("click", () => {
+        const direction = arrow.classList.contains("left") ? -300 : 300;
+        scrollContainer.scrollBy({left: direction, behavior: "smooth"});
+    });
+});
 
 
+const wishlistBtn = document.querySelector('.wishlist-icon');
 
-
+wishlistBtn.addEventListener('click', () => {
+  wishlistBtn.classList.toggle('is-toggled');
+});
 
