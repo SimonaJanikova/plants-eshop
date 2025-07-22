@@ -63,9 +63,12 @@ arrows.forEach(arrow => {
 });
 
 
-const wishlistBtn = document.querySelector('.wishlist-icon');
+const wishlistBtns = document.querySelectorAll(".wishlist-icon");
 
-wishlistBtn.addEventListener('click', () => {
-  wishlistBtn.classList.toggle('is-toggled');
-});
+wishlistBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.classList.toggle("is-toggled");
+    });
+})
+
 

@@ -12,7 +12,7 @@ body {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 1rem;
 }
 
 /*HEADER*/
@@ -341,9 +341,17 @@ a:active {
 
 /* PRODUCTS SECTION */
 
+.products {
+    font-weight: 500;
+    font-size: 2rem;
+    color: rgb(51, 51, 51);
+}
+
 .product-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
     box-sizing: border-box;
-    padding: 2rem;
 }
 
 .product-scroll {
@@ -383,10 +391,10 @@ a:active {
 .product-badge {
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: 5px;
     padding: 5px 10px;
     font-size: 0.8rem;
-    border-radius: 20px;
+    border-radius: 8px;
 }
 
 .product-name {
@@ -400,17 +408,16 @@ a:active {
 }
 
 .add-to-cart {
-    background-color: rgb(86, 126, 64);
+    background-color: rgb(94,104,33);
     color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
-    border-radius: 25px;
     cursor: pointer;
 }
 
 .add-to-cart:hover {
     padding: 10px 20px;
-    background-image: url(images/cart.svg);
+    background-image: url(images/cart-white.svg);
     background-repeat: no-repeat;
     background-position: center;
     color: transparent;
@@ -420,9 +427,9 @@ a:active {
     position: absolute;
     top: 5px;
     right: 5px;
-    width: 30px;
+    width: 40px;
     height: 30px;
-    background: url(images/heart.svg);
+    background: url(images/heart-green.svg);
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -436,7 +443,7 @@ a:active {
 }
 
 .wishlist-icon.is-toggled {
-    background-image: url(images/heart-fill.svg);
+    background-image: url(images/heart-filled.svg);
     opacity: 1;
 }
 
@@ -465,15 +472,14 @@ a:active {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgb(255, 255, 255,);
-  color: black;
+  background-color: rgb(251, 251, 251);
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.7rem;
   font-size: 1.5rem;
   cursor: pointer;
   z-index: 10;
   display: none;
-  border-radius: 50%;
+  border-radius: 20px;
 }
 
 .scroll-arrow.left {
@@ -551,7 +557,7 @@ a.logo {
     padding-left: 0;
   }
 
-/* MOBILE SEARCH*/
+/* MOBILE SEARCH */
 
   .mobile-search-container {
     display: flex;
@@ -581,5 +587,11 @@ a.logo {
 
   .mobile-search-btn i{
     pointer-events: none;
+  }
+
+/* PRODUCT SECTION */
+
+  .product-card {
+    flex: 0 0 calc(100% / 2 - 0.8rem);
   }
 }
