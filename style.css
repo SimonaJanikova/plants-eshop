@@ -591,7 +591,11 @@ a.logo {
 
 /* PRODUCT SECTION */
 
-  .product-card {
+    .product-card {
     flex: 0 0 calc(100% / 2 - 0.8rem);
-  }
+    }
+
+    .scroll-arrow {
+    display: none;
+    }
 }
