@@ -393,9 +393,8 @@ a:active {
     position: absolute;
     top: 10px;
     left: 5px;
-    padding: 5px 10px;
+    padding: 5px 8px;
     font-size: 0.8rem;
-    border-radius: 8px;
 }
 
 .product-name {
@@ -518,7 +517,7 @@ a:active {
     margin-bottom: 2rem;
 }
 
-.article-img-wrapper {
+.article-wrapper {
     position: relative;
     width: 270px;
     height: auto;
