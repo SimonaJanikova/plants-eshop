@@ -27,10 +27,10 @@ header {
 }
 
 .header-left {
-  flex: 0 0 auto;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .logo {
@@ -126,9 +126,9 @@ nav ul li a:hover {
 }
 
 .sidebar ul li i {
-     display: inline-block;
-     transform: rotate(45deg);
-     font-size: 3rem;
+    display: inline-block;
+    transform: rotate(45deg);
+    font-size: 3rem;
 }
 
 .content {
@@ -250,7 +250,7 @@ a:hover {
 }
 
 a:active {
-  color: rgb(79, 87, 29);
+    color: rgb(79, 87, 29);
 }
 
 /* FLASH MESSAGE */
@@ -450,100 +450,100 @@ a:active {
 /*PRODUCT SECTION - SCROLL*/
 
 .product-slider-wrapper {
-  position: relative;
-  overflow: hidden;
-  margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    margin: 2rem 0;
 }
 
 .product-scroll {
-  display: flex;
-  overflow-x: auto;
-  gap: 1rem;
-  padding: 1rem 0;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .product-scroll::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .scroll-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgb(251, 251, 251);
-  border: none;
-  padding: 0.5rem 0.7rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  z-index: 10;
-  display: none;
-  border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(251, 251, 251);
+    border: none;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+    border-radius: 20px;
 }
 
 .scroll-arrow.left {
-  left: 0.5rem;
+    left: 0.5rem;
 }
 
 .scroll-arrow.right {
-  right: 0.5rem;
+    right: 0.5rem;
 }
 
 .product-slider-wrapper:hover .scroll-arrow {
-  display: block;
+    display: block;
 }
 
 /* ARTICLES */
 
 .our-articles {
-max-width: 1400px;
-margin: 0 auto;
-padding: 0 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .articles-container {
-display: flex;
-flex-direction: column;
-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .articles-title {
-color: rgb(51, 51, 51);
-font-weight: 500;
-font-size: 2rem;
-border-bottom: rgba(94, 104, 33, 1) solid 2px;
-padding-bottom: 1.5rem;
-margin-bottom: 2rem;
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+    font-size: 2rem;
+    border-bottom: rgba(94, 104, 33, 1) solid 2px;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .article-wrapper {
-position: relative;
-width: 270px;
-height: auto;
-overflow: hidden;
+    position: relative;
+    width: 270px;
+    height: auto;
+    overflow: hidden;
 }
 
 .article-date {
-position: absolute;
-top: 10px;
-left: 10px;
-background-color: white;
-color: #333;
-font-size: 12px;
-padding: 4px 8px;
-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-z-index: 10;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    color: #333;
+    font-size: 12px;
+    padding: 4px 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
 }
 
 .article-tag {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background-color: rgba(94, 104, 33, 1);
-  color: white;
-  font-size: 12px;
-  padding: 4px 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(94, 104, 33, 1);
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
 }
 
 .article-card {
@@ -598,11 +598,11 @@ footer {
 
 .footer-content {
     max-width: 1400px;
-  margin: 0 auto;
-  border-top: 2px solid rgba(94, 104, 33, 1);
-  display: flex;
-  padding: 2rem 1rem;
-  box-sizing: border-box;
+    margin: 0 auto;
+    border-top: 2px solid rgba(94, 104, 33, 1);
+    display: flex;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
 }
 
 .footer-sub {
@@ -653,9 +653,9 @@ footer {
 }
 
 .footer-social a {
-  color: rgb(94, 90, 90);
-  text-decoration: none;
-  font-size: 35px;
+    color: rgb(94, 90, 90);
+    text-decoration: none;
+    font-size: 35px;
 }
 
 .footer-social a:hover {
@@ -853,4 +853,19 @@ a.logo {
         max-width: 100%;
         height: auto;
     }
+
+    /* FOOTER */
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0.8rem;
+    }
+
+  .payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
 }
