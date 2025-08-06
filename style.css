@@ -739,12 +739,12 @@ footer {
     display: none;
   }
 
-.logo {
+    .logo {
     max-width: 150px;
     margin-left: 3rem;
 }
 
-a.logo {
+    a.logo {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -862,10 +862,14 @@ a.logo {
         padding: 0.8rem;
     }
 
+    .footer-sub {
+        border-radius: none;
+    }
+
   .payment-methods {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
   }
 }
