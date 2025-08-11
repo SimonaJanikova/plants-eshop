@@ -655,7 +655,7 @@ footer {
 .footer-social a {
     color: rgb(94, 90, 90);
     text-decoration: none;
-    font-size: 35px;
+    font-size: 2rem;
 }
 
 .footer-social a:hover {
@@ -863,13 +863,32 @@ footer {
     }
 
     .footer-sub {
-        border-radius: none;
+        border-right: none;
     }
 
-  .payment-methods {
+    .footer-heading {
+        font-size: 0.8rem;
+    }
+
+    .footer-links a {
+        font-size: 0.8rem;
+    } 
+
+    .footer-links ul li {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .payment-methods {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
   }
+
+  .footer-links {
+    gap: 1rem;
+    margin: 1.5rem;
+}
+
 }
