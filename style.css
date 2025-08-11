@@ -47,7 +47,7 @@ header {
     flex: 0 0 auto;
     align-items: center;
     justify-content: flex-end;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 nav ul {
@@ -89,6 +89,72 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+/* FLASH MESSAGE */
+
+.flash-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(116, 127, 44, 0.85);
+    padding: 0.5rem 1rem;
+}
+
+.flash-link {
+    text-decoration: none;
+    color: rgb(245, 240, 230);
+    flex: 1;
+    text-align: center;
+}
+
+.flash-link:hover {
+    text-decoration: none;
+}
+
+.close-banner-btn {
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.close-banner-btn:hover {
+    background-color: rgb(79, 87, 29);
+}
+
+/* SEARCH CONTAINER */
+
+  .search-container {
+    display: flex;
+    width: 380px;
+    margin-top: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background-color: rgba(252, 252, 250, 0.921);
+  }
+
+  .search-input {
+    flex: 1;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    background-color: transparent;
+  }
+
+  .search-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    color: rgb(10, 49, 19);
+    cursor: pointer;   
+  }
+
+  .mobile-search-btn i{
+    pointer-events: none;
+  }
+
 /* MAIN */
 
 .main-section {
@@ -103,7 +169,7 @@ nav ul li a:hover {
 .sidebar {
     flex: 1 1 250px;
     max-width: 300px;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .sidebar ul {
@@ -253,33 +319,6 @@ a:active {
     color: rgb(79, 87, 29);
 }
 
-/* FLASH MESSAGE */
-
-.flash-message {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(116, 127, 44, 0.85);
-    color: rgb(255, 255, 255);
-    padding: 0.5rem 1rem;
-}
-
-.flash-message p {
-    flex: 1;
-    text-align: center;
-}
-
-.close-banner-btn {
-    background: none;
-    border: none;
-    color: rgb(255, 255, 255);
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.close-banner-btn:hover {
-    background-color: rgb(79, 87, 29);
-}
 
 /*MOBILE MENU HEADER*/
 
@@ -715,10 +754,6 @@ footer {
     display: none;
   }
 
-  .mobile-search-container {
-    display: none;
-  }
-
   .footer-links {
     gap: 5rem;
   }
@@ -726,16 +761,11 @@ footer {
 
 @media (max-width: 767px) {
 
-    body {
-        padding-top: 1rem;
-    }
-
 /* HEADER */
 
   .header-left,
   .sidebar,
-  .auth-links,
-  .search-btn {
+  .auth-links {
     display: none;
   }
 
@@ -778,30 +808,6 @@ footer {
     display: flex;
     width: 90%;
     margin: 1rem auto;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    border-radius: 18px;
-    background-color: rgba(252, 252, 250, 0.921);
-  }
-
-  .mobile-search-input {
-    flex: 1;
-    border: none;
-    padding: 0.8rem 1rem;
-    font-size: 1rem;
-    outline: none;
-    background-color: transparent;
-  }
-
-  .mobile-search-btn {
-    border: none;
-    background-color: transparent;
-    padding: 0.8rem 1rem;
-    font-size: 1.2rem;
-    color: rgb(10, 49, 19);
-  }
-
-  .mobile-search-btn i{
-    pointer-events: none;
   }
 
 /* PRODUCT SECTION */
