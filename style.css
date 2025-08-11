@@ -804,7 +804,7 @@ footer {
 
 /* MOBILE SEARCH */
 
-  .mobile-search-container {
+  .search-container {
     display: flex;
     width: 90%;
     margin: 1rem auto;
