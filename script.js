@@ -29,46 +29,61 @@ function showError(message) {
     errorContainer.appendChild(errorMsg);
 }*/
 
-const closeBtn = document.getElementById("closeBannerBtn");
-const flashMessage = document.querySelector(".flash-message");
 
-closeBtn.addEventListener("click", () => {
-    flashMessage.style.display = "none"; 
+// FLASH MESSAGE
+
+const closeBtn = document.getElementById('closeBannerBtn');
+const flashMessage = document.querySelector('.flash-message');
+
+closeBtn.addEventListener('click', () => {
+    flashMessage.style.display = 'none'; 
 });
 
-const hamburger = document.getElementById("hamburger");
-const mobileMenu = document.getElementById("mobileMenu");
+// HAMBURGER MENU
 
-hamburger.addEventListener("click", () => {
-    mobileMenu.classList.toggle("active");
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
 });
 
-document.addEventListener("click", (event) => {
+document.addEventListener('click', (event) => {
     const clickInsideMenu = mobileMenu.contains(event.target);
     const clickOnHamburger = hamburger.contains(event.target);
 
     if (!clickInsideMenu && !clickOnHamburger) {
-        mobileMenu.classList.remove("active");
+        mobileMenu.classList.remove('active');
     }
 });
+
+// SCROLL
 
 const scrollContainer = document.querySelector(".product-scroll");
 const arrows = document.querySelectorAll(".scroll-arrow");
 
 arrows.forEach(arrow => {
-    arrow.addEventListener("click", () => {
-        const direction = arrow.classList.contains("left") ? -300 : 300;
-        scrollContainer.scrollBy({left: direction, behavior: "smooth"});
+    arrow.addEventListener('click', () => {
+        const direction = arrow.classList.contains('left') ? -300 : 300;
+        scrollContainer.scrollBy({left: direction, behavior: 'smooth'});
     });
 });
 
 
-const wishlistBtns = document.querySelectorAll(".wishlist-icon");
+// FILTER DROPDOWN MENU
+const filterBtn = document.querySelector('.filter-wrapper .filter-btn');
+const filterMenu = document.querySelector('.filter-wrapper .filter-menu');
 
-wishlistBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-        btn.classList.toggle("is-toggled");
-    });
-})
+filterBtn.addEventListener('click', () => {
+    filterMenu.classList.toggle('active');
+});
 
+document.addEventListener('click', (event) => {
+    const clickInsideFilter = filterMenu.contains(event.target);
+    const clickOnButton = filterBtn.contains(event.target);
+
+    if (!clickInsideFilter && !clickOnButton) {
+        filterMenu.classList.remove('active');
+    }
+});
 

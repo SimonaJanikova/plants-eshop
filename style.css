@@ -1,3 +1,13 @@
+:root {
+    --main-bg-color: rgba(94, 104, 33, 0.09); 
+    --main-text-color: rgb(59, 59, 59);
+    --border-color: rgba(94, 104, 33, 1);
+    --link-hover-color: rgb(94, 104, 33);
+    --button-color: rgba(94, 104, 33, 1);
+    --button-hover-color: rgb(79, 87, 29);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +15,7 @@
 }
 
 body {
-    background-color: rgba(94, 104, 33, 0.09);
+    background-color: var(--main-bg-color);
     font-family: 'Manrope', sans-serif;
 }
 
@@ -23,7 +33,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 1rem;
-    border-bottom: rgba(94, 104, 33, 1) solid 2px;
+    border-bottom: var(--border-color) solid 2px;
 }
 
 .header-left {
@@ -58,11 +68,11 @@ nav ul {
 }
 
 nav ul li a {
-    color: black;
+    color: var(--main-text-color);
 }
 
 nav ul li a:hover {
-    color: rgb(94, 104, 33);
+    color: var(--link-hover-color);
     cursor: pointer;
     text-decoration: none;
 }
@@ -71,7 +81,7 @@ nav ul li a:hover {
 .icon-btn {
     border: none;
     font-size: 1rem;
-    color: black;
+    color: var(--main-text-color);
     text-decoration: none;
     background-color: transparent;
 }
@@ -85,7 +95,7 @@ nav ul li a:hover {
 }
 
 .icon-btn:hover {
-    color: rgb(94, 104, 33);
+    color: var(--link-hover-color);
     cursor: pointer;
 }
 
@@ -119,12 +129,13 @@ nav ul li a:hover {
 }
 
 .close-banner-btn:hover {
-    background-color: rgb(79, 87, 29);
+    background-color: var(--button-color);
 }
 
 /* SEARCH CONTAINER */
 
   .search-container {
+    position: relative;
     display: flex;
     width: 380px;
     margin-top: 1rem;
@@ -147,7 +158,7 @@ nav ul li a:hover {
     background-color: transparent;
     padding: 0.8rem 1rem;
     font-size: 1.2rem;
-    color: rgb(10, 49, 19);
+    color: var(--main-text-color);
     cursor: pointer;   
   }
 
@@ -162,7 +173,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
     gap: 5rem;
     margin-top: 2rem;
-    border-bottom: rgba(94, 104, 33, 1) solid 2px;
+    border-bottom: var(--border-color) solid 2px;
     padding-bottom: 2rem;
 }
 
@@ -181,12 +192,12 @@ nav ul li a:hover {
     align-items: center;
     font-weight: 500;
     font-size: 2.3rem;
-    color: rgb(51, 51, 51);
+    color: var(--main-text-color);
     margin-bottom: 1.3rem;
 }
 
 .sidebar ul li a:hover {
-    color: rgb(94, 104, 33);
+    color: var(--link-hover-color);
     cursor: pointer;
     text-decoration: none;
 }
@@ -200,7 +211,7 @@ nav ul li a:hover {
 .content {
     flex: 2 1 0;
     max-width: 100%;
-    border-left: rgba(94, 104, 33, 1) solid 2px;
+    border-left: var(--border-color) solid 2px;
     padding-left: 2rem;
 }
 
@@ -214,7 +225,6 @@ nav ul li a:hover {
 /* LOGIN */
 
 .login-form {
-    width: 90%;
     max-width: 450px;
     margin: 7rem auto;
     display: flex;
@@ -248,7 +258,7 @@ nav ul li a:hover {
 
 
 .reg-form-submit {
-    background-color: rgba(94, 104, 33, 1);
+    background-color: var(--button-color);
     color: rgb(255, 255, 255);
     border: none;
     padding: 15px;
@@ -272,7 +282,7 @@ nav ul li a:hover {
 .checkbox-wrapper input[type="checkbox"] {
     width: 16px;
     height: 16px;
-    accent-color: rgb(79, 87, 29);
+    accent-color: var(--button-color);
 }
 
 .checkbox-wrapper label {
@@ -304,7 +314,7 @@ nav ul li a:hover {
 }
 
 .reg-form-submit:hover {
-    background-color: rgb(79, 87, 29);
+    background-color: var(--button-hover-color);
 }
 
 a {
@@ -349,7 +359,7 @@ a:active {
 
 .mobile-bottom {
     padding: 1rem;
-    border-top: 2px solid rgb(79, 87, 29);
+    border-top: 2px solid var(--border-color);
 }
 
 .mobile-top ul,
@@ -376,7 +386,7 @@ a:active {
     font-size: 2rem;
     z-index: 1100;
     position: relative;
-    color: rgb(0, 0, 0);
+    color: var(--main-text-color);
 }
 
 /* PRODUCTS SECTION */
@@ -384,7 +394,7 @@ a:active {
 .products {
     font-weight: 500;
     font-size: 2rem;
-    color: rgb(51, 51, 51);
+    color: var(--main-text-color);
 }
 
 .product-section {
@@ -447,7 +457,7 @@ a:active {
 }
 
 .add-to-cart {
-    background-color: rgb(94,104,33);
+    background-color: var(--button-color);
     color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
@@ -548,10 +558,10 @@ a:active {
 }
 
 .articles-title {
-    color: rgb(51, 51, 51);
+    color: var(--main-text-color);
     font-weight: 500;
     font-size: 2rem;
-    border-bottom: rgba(94, 104, 33, 1) solid 2px;
+    border-bottom: var(--border-color) solid 2px;
     padding-bottom: 1.5rem;
     margin-bottom: 2rem;
 }
@@ -568,7 +578,7 @@ a:active {
     top: 10px;
     left: 10px;
     background-color: white;
-    color: #333;
+    color: var(--main-text-color);
     font-size: 12px;
     padding: 4px 8px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
@@ -579,7 +589,7 @@ a:active {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    background-color: rgba(94, 104, 33, 1);
+    background-color: var(--button-color);
     color: white;
     font-size: 12px;
     padding: 4px 8px;
@@ -603,7 +613,7 @@ a:active {
     gap: 1.5rem;
     text-decoration: none;
     align-items: center;
-    color: rgb(51, 51, 51);
+    color: var(--main-text-color);
 }
 
 .article-card a:hover {
@@ -638,17 +648,17 @@ footer {
 .footer-content {
     max-width: 1400px;
     margin: 0 auto;
-    border-top: 2px solid rgba(94, 104, 33, 1);
     display: flex;
     padding: 2rem 1rem;
     box-sizing: border-box;
+    border-top: var(--border-color) 2px solid;
 }
 
 .footer-sub {
     max-width: 700px;
     padding-right: 1rem;
     margin-top: 2rem;
-    border-right: rgba(94, 104, 33, 1) solid 2px;
+    border-right: var(--border-color) solid 2px;
 }
 
 .newsletter-txt {
@@ -657,7 +667,7 @@ footer {
 }
 
 .footer-btn {
-    background-color: rgba(94, 104, 33, 1);
+    background-color: var(--button-color);
     color: rgb(255, 255, 255);
     border: none;
     padding: 15px;
@@ -678,7 +688,7 @@ footer {
 }
 
 .footer-btn:hover{
-    background-color: rgb(79, 87, 29);
+    background-color: var(--button-hover-color);
 }
 
 .newsletter-agree {
@@ -698,7 +708,7 @@ footer {
 }
 
 .footer-social a:hover {
-    color: rgb(79, 87, 29);
+    color: var(--link-hover-color);
 }
 
 .footer-links {
@@ -718,11 +728,11 @@ footer {
 }
 
 .footer-links a {
-    color: rgb(51, 51, 51);
+    color: var(--main-text-color);
 }
 
 .footer-links a:hover {
-    color: rgb(94, 104, 33);
+    color: var(--link-hover-color);
     text-decoration: none;
 }
 
@@ -737,13 +747,120 @@ footer {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .payment-methods img {
     height: 24px;
 }
 
+/* SUBPAGE FLOWERS */
+
+h3 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.flowers-description {
+    text-align: center;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: rgb(118, 114, 114);
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(191, 194, 170, 0.225);
+}
+
+.filter-wrapper {
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.filter-options a {
+    color: var(--main-text-color);
+    margin-right: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(95, 104, 33, 0.225);
+    padding: 15px;
+    background-color: rgba(202, 206, 182, 0.16);
+}
+
+.filter-options a:hover {
+    background-color: rgba(66, 74, 23, 0.144);
+}
+
+.filter-options a:first-child {
+    background-color: rgba(116, 127, 44, 0.719);
+    color: rgb(245, 240, 230);
+}
+
+.filter-options a:first-child:hover {
+    background-color: var(--button-color);
+}
+
+.filter-options a:hover {
+    text-decoration: none;
+}
+
+.filter-btn {
+    color: var(--main-text-color);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 10px rgba(95, 104, 33, 0.225);
+    padding: 15px;
+    background-color: rgba(202, 206, 182, 0.16);
+}
+
+.filter-btn:hover {
+    background-color: rgba(66, 74, 23, 0.144);
+}
+
+.filter-btn span {
+    color: var(--main-text-color);
+    font-size: 1rem;
+}
+
+.filter-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.filter-menu {
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  padding: 0.3rem;
+  background: rgb(239, 238, 233);
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  min-width: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.filter-menu.active {
+  display: block;
+}
+
+.filter-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-menu li {
+  margin-bottom: 0.5rem;
+}
+
+.filter-menu input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
 
 @media (min-width: 768px) {
   .mobile-menu {
