@@ -135,7 +135,7 @@ nav ul li a:hover {
 /* SEARCH CONTAINER */
 
   .search-container {
-    position: relative;
+    margin-left: auto;
     display: flex;
     width: 380px;
     margin-top: 1rem;
@@ -225,6 +225,7 @@ nav ul li a:hover {
 /* LOGIN */
 
 .login-form {
+    color: var(--main-text-color);
     max-width: 450px;
     margin: 7rem auto;
     display: flex;
@@ -318,11 +319,13 @@ nav ul li a:hover {
 }
 
 a {
+    color: var(--main-text-color);
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    color: var(--button-color);
 }
 
 a:active {
@@ -640,119 +643,110 @@ a:active {
 
 /* FOOTER */
 
-footer {
-    width: 100%;
-    display: flex;
-}
-
-.footer-content {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    padding: 2rem 1rem;
-    box-sizing: border-box;
-    border-top: var(--border-color) 2px solid;
-}
-
-.footer-sub {
-    max-width: 700px;
-    padding-right: 1rem;
-    margin-top: 2rem;
-    border-right: var(--border-color) solid 2px;
-}
-
-.newsletter-txt {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-}
-
-.footer-btn {
-    background-color: var(--button-color);
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.footer-sub input[type="email"] {
-    width: 50%;
-    padding: 15px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgba(94, 104, 33, 0.09);
-    box-sizing: border-box;
-    margin-bottom: 1.5rem;
-    margin-right: 0.5rem;
-}
-
-.footer-btn:hover{
-    background-color: var(--button-hover-color);
-}
-
-.newsletter-agree {
-    color: rgb(118, 114, 114);
-}
-
-.footer-social {
-    display: flex;
-    margin: 1rem;
-    gap: 1rem;
-}
-
-.footer-social a {
-    color: rgb(94, 90, 90);
-    text-decoration: none;
-    font-size: 2rem;
-}
-
-.footer-social a:hover {
-    color: var(--link-hover-color);
-}
-
-.footer-links {
-    display: flex;
-    gap: 1rem;
-    margin: 2rem;
-}
-
-.footer-links ul {
-    text-decoration: none;
-    list-style: none;
-}
-
-.footer-links ul li {
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-}
-
-.footer-links a {
-    color: var(--main-text-color);
-}
-
-.footer-links a:hover {
-    color: var(--link-hover-color);
-    text-decoration: none;
-}
-
-.footer-heading {
-    font-size: 1.2rem;
-    font-weight: bold;
+footer { 
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
     margin-bottom: 1rem;
-}
+} 
+    
+.footer-content { 
+    display: flex; 
+    width: 1400px;
+    border-top: var(--border-color) 2px solid; 
+    justify-content: center;} 
 
-.payment-methods {
-    max-width: 1400px;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    padding: 0.5rem 0;
+.footer-sub { 
+    max-width: 600px;
+    margin-top: 2rem; 
+    border-right: var(--border-color) solid 2px;
+    flex: 0 0 auto;
+    padding-right: 1rem;
+} 
+    
+.newsletter-txt { 
+    font-size: 1.2rem; 
+    margin-bottom: 1rem;
+} 
+    
+.footer-btn { 
+    background-color: var(--button-color); 
+    color: rgb(255, 255, 255); 
+    border: none; 
+    padding: 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+} 
+
+.footer-sub input[type="email"] { 
+    width: 50%; 
+    padding: 15px; 
+    border-radius: 5px; 
+    border: none; 
+    background-color: rgba(94, 104, 33, 0.09);
+    margin-bottom: 1.5rem; 
+    margin-right: 0.5rem; 
+} 
+            
+.footer-btn:hover{ 
+    background-color: var(--button-hover-color); 
+} 
+            
+.newsletter-agree { 
+    color: rgb(118, 114, 114); 
+    display: block;
+    margin: 0;
+    padding: 0;
+} 
+
+.footer-social a { 
+    color: rgb(94, 90, 90); 
+    text-decoration: none; 
+    font-size: 2rem; 
+} 
+            
+.footer-social a:hover { 
+    color: var(--link-hover-color); 
+} 
+            
+.footer-links { 
+    display: flex; 
+    margin-top: 2rem; 
+    padding-left: 1rem;
+    gap: 0rem;
+} 
+
+.footer-links ul { 
+    text-decoration: none; 
+    list-style: none;
+} 
+            
+.footer-links ul li { 
+    margin-bottom: 1rem; 
+    font-size: 1rem; 
+} 
+            
+.footer-links a { 
+    color: var(--main-text-color); 
+} 
+            
+.footer-links a:hover { 
+    color: var(--link-hover-color); 
+    text-decoration: none; 
+} 
+            
+.footer-heading { 
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    margin-bottom: 1rem; 
 }
 
 .payment-methods img {
-    height: 24px;
+    width: auto;
+    height: 25px;
 }
+
 
 /* SUBPAGE FLOWERS */
 
