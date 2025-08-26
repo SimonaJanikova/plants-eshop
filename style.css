@@ -865,6 +865,9 @@ h3 {
   margin-right: 0.5rem;
 }
 
+
+                /* DESKTOP */
+
 @media (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -878,6 +881,8 @@ h3 {
     gap: 5rem;
   }
 }
+
+                /* MOBIL */
 
 @media (max-width: 767px) {
 
@@ -986,16 +991,21 @@ header {
 
     /* FOOTER */
 
+
     .footer-content {
         display: flex;
         flex-direction: column;
-        padding: 0.8rem;
+        padding: 0 1rem;
     }
 
     .footer-sub {
         border-right: none;
-        margin-left: 2.5rem;
+        margin-left: 1rem;
     }
+
+.footer-sub img {
+    align-self: flex-start;
+}
 
     .footer-heading {
         font-size: 1rem;
@@ -1012,7 +1022,11 @@ header {
 
     .footer-links {
         gap: 1rem;
-        margin: 1.5rem;
     }
+}
+
+                /* TABLET */
+
+@media (max-width: 1024px) and (min-width: 768px) {
 
 }
