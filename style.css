@@ -19,7 +19,6 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
-
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -32,7 +31,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
     border-bottom: var(--border-color) solid 2px;
 }
 
@@ -41,6 +40,10 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.header-left a {
+    text-decoration: none;
 }
 
 .logo {
@@ -84,6 +87,11 @@ nav ul li a:hover {
     color: var(--main-text-color);
     text-decoration: none;
     background-color: transparent;
+}
+
+.login-btn:hover, 
+.reg-btn:hover {
+    text-decoration: underline;
 }
 
 .profile-btn {
@@ -183,6 +191,10 @@ nav ul li a:hover {
     margin-top: 3rem;
 }
 
+.sidebar a {
+    text-decoration: none;
+}
+
 .sidebar ul {
     list-style: none;
 }
@@ -239,6 +251,16 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+
+.form-forgot {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.form-forgot:hover {
+    text-decoration: underline;
+    color: var(--button-color);
 }
 
 .is-required label {
@@ -318,17 +340,17 @@ nav ul li a:hover {
     background-color: var(--button-hover-color);
 }
 
-a {
+.reg-link {
     color: var(--main-text-color);
     text-decoration: none;
 }
 
-a:hover {
+.reg-link:hover {
     text-decoration: underline;
     color: var(--button-color);
 }
 
-a:active {
+.reg-link:active {
     color: rgb(79, 87, 29);
 }
 
@@ -580,12 +602,25 @@ a:active {
     position: absolute;
     top: 10px;
     left: 10px;
+    padding: 8px;
     background-color: white;
     color: var(--main-text-color);
-    font-size: 12px;
-    padding: 4px 8px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     z-index: 10;
+    text-align: center;
+}
+
+.article-date::before {
+    content: attr(data-day);
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.article-date::after {
+    content: attr(data-month);
+    display: block; 
+    font-size: 15px;
 }
 
 .article-tag {
@@ -593,9 +628,18 @@ a:active {
     bottom: 10px;
     left: 10px;
     background-color: var(--button-color);
-    color: white;
-    font-size: 12px;
+    font-size: 0.8rem;
     padding: 4px 8px;
+}
+
+
+.article-wrapper .article-tag {
+    color: white;
+}
+
+
+.article-wrapper .article-tag:hover {
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .article-card {
@@ -644,9 +688,9 @@ a:active {
 /* FOOTER */
 
 footer { 
-    display: flex; 
-    justify-content: center; 
-    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin-bottom: 1rem;
 } 
     
@@ -658,8 +702,8 @@ footer {
 } 
 
 .footer-sub { 
-    max-width: 580px;
-    margin-top: 2rem; 
+    max-width: 400px;
+    margin: 1rem 0;  
     border-right: var(--border-color) solid 2px;
     flex: 0 0 auto;
     padding-right: 1rem;
@@ -718,9 +762,10 @@ footer {
             
 .footer-links { 
     display: flex; 
-    margin-top: 2rem; 
+    margin: 1rem 0; 
     padding-left: 1rem;
     gap: 0rem;
+    text-decoration: none;
 } 
 
 .footer-links ul { 
@@ -735,6 +780,7 @@ footer {
             
 .footer-links a { 
     color: var(--main-text-color); 
+    text-decoration: none;
 } 
 
 .footer-links p {
@@ -755,6 +801,25 @@ footer {
 .payment-methods img {
     width: auto;
     height: 25px;
+}
+
+.footer-bottom {
+    margin-top: auto;
+    color: var(--main-text-color);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;             
+    border-top: var(--border-color) 2px solid;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+    color: var(--link-hover-color);
 }
 
 
@@ -792,6 +857,7 @@ h3 {
     box-shadow: 0px 2px 10px rgba(95, 104, 33, 0.225);
     padding: 15px;
     background-color: rgba(202, 206, 182, 0.16);
+    text-decoration: none;
 }
 
 .filter-options a:hover {
@@ -990,21 +1056,22 @@ h3 {
     }
 
     /* FOOTER */
-
-
+    
     .footer-content {
         display: flex;
         flex-direction: column;
-        padding: 0 1rem;
-    }
+        width: 100%;
+        box-sizing: border-box;
+}
 
     .footer-sub {
         border-right: none;
-        margin-left: 1rem;
+        padding-left: 1rem;
     }
 
     .footer-sub img {
         align-self: flex-start;
+        width: 230px;
     }
 
     .footer-heading {
@@ -1022,6 +1089,7 @@ h3 {
 
     .footer-links {
         gap: 1rem;
+        padding: 0 1rem;
     }
 }
 
@@ -1058,6 +1126,8 @@ h3 {
         padding-left: 0;
     }
 
+    /* FOOTER */
+
     .footer-content {
         width: 100%;
         max-width: 1400px;
@@ -1070,6 +1140,11 @@ h3 {
     .footer-sub {
         border-right: none;
         padding-left: 1rem;
+        max-width: 750px;
+    }
+
+    .footer-links {
+        gap: 2rem;
     }
 }
 
