@@ -742,6 +742,7 @@ footer {
     width: 1400px;
     border-top: var(--border-color) 2px solid; 
     justify-content: center;
+    box-sizing: border-box;
 } 
 
 .footer-sub { 
@@ -808,13 +809,12 @@ footer {
     flex-wrap: wrap;
     margin: 1rem 0; 
     padding-left: 1rem;
-    gap: 1rem;
     text-decoration: none;
+    box-sizing: border-box;
 } 
 
 .footer-links > div {
-    flex: 1;
-    min-width: 200px;
+    flex: 33.33%;
     box-sizing: border-box;
 }
 
@@ -865,7 +865,7 @@ footer {
 
 .footer-bottom a {
     text-decoration: none;
-    color: var(--main-text-color);
+    color: var(--link-hover-color);
 }
 
 .footer-bottom a:hover {
@@ -994,10 +994,6 @@ h3 {
     .hamburger {
         display: none;
     }
-
-    .footer-links {
-        gap: 5rem;
-    } 
 }
 
                 /* MOBIL */
