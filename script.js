@@ -71,6 +71,7 @@ arrows.forEach(arrow => {
 
 
 // FILTER DROPDOWN MENU
+
 const filterBtn = document.querySelector('.filter-wrapper .filter-btn');
 const filterMenu = document.querySelector('.filter-wrapper .filter-menu');
 
