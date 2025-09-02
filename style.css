@@ -521,6 +521,30 @@ nav ul li a:hover {
     opacity: 1;
 }
 
+.wishlist-icon.is-loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  margin: -8px 0 0 -8px;
+  border: 2px solid #ccc;
+  border-top: 2px solid var(--button-color);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  z-index: 10;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.wishlist-icon.is-loading {
+  background-image: none;
+}
+
+
 /*PRODUCT SECTION - SCROLL*/
 
 .product-slider-wrapper {
