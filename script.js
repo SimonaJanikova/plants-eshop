@@ -30,14 +30,7 @@ function showError(message) {
 }*/
 
 
-// FLASH MESSAGE
-
-const closeBtn = document.getElementById('closeBannerBtn');
-const flashMessage = document.querySelector('.flash-message');
-
-closeBtn.addEventListener('click', () => {
-    flashMessage.style.display = 'none'; 
-});
+    
 
 // HAMBURGER MENU
 

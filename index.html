@@ -20,10 +20,10 @@
 
 <!-- FLASH MESSAGE -->
 
-    <div class="flash-message">
+    <div class="flash-message" js-id="action#flash_message">
         <a href="#" class="flash-link">Občas sa môže stať že doručený email s objednávkou skončí v zložke SPAM. Je preto potrebné skontrolovať aj nevyžiadanú poštu. Ďakujeme.</a>
 
-        <button class="close-banner-btn" id="closeBannerBtn">
+        <button type="button" class="close-banner-btn" js-id="action@click(remove,cache)#flash_message"id="closeBannerBtn">
             <i class="bi bi-x"></i>
         </button>
     </div>
@@ -83,7 +83,7 @@
             <button class="icon-btn fav-btn"> <i class="bi bi-heart"></i> </button>
 
             <button class="icon-btn cart-btn">
-                <i class="bi bi-bag"></i> 
+                <i  class="bi bi-bag"></i> 
             </button>
         </div>
     </header>
@@ -149,42 +149,49 @@
     <div class="product-scroll">
         <article class="product-card">
             <div class="product-img">
-                <span style="background-color:  #ffffff; color: #000000;" class="product-badge">-10%</span>
-                <img src="images/monstera-deliciosa.jpg" alt="Monstera Deliciosa">
+                <div class="badge-wrapper">
+                    <span style="background-color:  #ffffff; color:  #000000;" class="product-badge">-10%</span>
+                </div>                <img src="images/monstera-deliciosa.jpg" alt="Monstera Deliciosa">
                 <button class="wishlist-icon" 
                         js-id="ajax@click(front.wishlist,toggle)#wishlist_1#loading_1"
                         data-data='{"wishlist_product_id": 1}'>
                 </button>
             </div>
-                <h3 class="product-name">Monstera Deliciosa</h3>
+                <a href="#" class="product-name">Monstera Deliciosa</a>
                 <p class="product-price">24.90€</p>
                 <button type="button" class="add-to-cart">Pridať do košíka</button>
         </article>
 
         <article class="product-card">
             <div class="product-img">
-                <span style="background-color:  #ffffff; color:  #000000;" class="product-badge">-10%</span>
+                <div class="badge-wrapper">
+                    <span style="background-color:  #ffffff; color:  #000000;" class="product-badge">-10%</span>
+                    <span style="background-color:  #ffffff; color:  #000000;" class="product-badge">Novinka</span>
+                </div>
                 <img src="images/monstera-deliciosa.jpg" alt="Monstera Deliciosa">
                 <button class="wishlist-icon"
                         js-id="ajax@click(front.wishlist,toggle)#wishlist_2#loading_2"
                         data-data='{"wishlist_product_id": 2}'>
                 </button>
             </div>
-                <h3 class="product-name">Monstera Deliciosa</h3>
+                <a href="#" class="product-name">Monstera Deliciosa</a>
                 <p class="product-price">24.90€</p>
                 <button type="button" class="add-to-cart">Pridať do košíka</button>
         </article>
 
         <article class="product-card">
             <div class="product-img">
-                <span style="background-color:  #ffffff; color: #000000;" class="product-badge">-10%</span>
+                <div class="badge-wrapper">
+                    <span style="background-color:  #ffffff; color:  #000000;" class="product-badge">-10%</span>
+                    <span style="background-color:  #ffffff; color:  #000000;" class="product-badge">Novinka</span>
+                </div>
                 <img src="images/monstera-deliciosa.jpg" alt="Monstera Deliciosa">
                 <button class="wishlist-icon"
                         js-id="ajax@click(front.wishlist,toggle)#wishlist_3#loading_3"
                         data-data='{"wishlist_product_id": 3}'>
                 </button>
             </div>
-                <h3 class="product-name">Monstera Deliciosa</h3>
+                <a href="#" class="product-name">Monstera Deliciosa</a>
                 <p class="product-price">24.90€</p>
                 <button type="button" class="add-to-cart">Pridať do košíka</button>
         </article>
@@ -198,7 +205,7 @@
                         data-data='{"wishlist_product_id": 4}'
                 ></button>
             </div>
-                <h3 class="product-name">Monstera Deliciosa</h3>
+                <a href="#" class="product-name">Monstera Deliciosa</a>
                 <p class="product-price">24.90€</p>
                 <button type="button" class="add-to-cart">Pridať do košíka</button>
         </article>
@@ -212,7 +219,7 @@
                         data-data='{"wishlist_product_id": 5}'>
                 </button>
             </div>
-                <h3 class="product-name">Monstera Deliciosa</h3>
+                <a href="#" class="product-name">Monstera Deliciosa</a>
                 <p class="product-price">24.90€</p>
                 <button type="button" class="add-to-cart">Pridať do košíka</button>
         </article>

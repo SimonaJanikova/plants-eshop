@@ -420,12 +420,13 @@ nav ul li a:hover {
     font-weight: 500;
     font-size: 2rem;
     color: var(--main-text-color);
+    padding-top: 1.5rem;
 }
 
 .product-section {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 0 1rem;
     box-sizing: border-box;
 }
 
@@ -463,10 +464,16 @@ nav ul li a:hover {
     border-radius: 8px;
 }
 
-.product-badge {
+.badge-wrapper {
     position: absolute;
     top: 10px;
     left: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.product-badge {
     padding: 5px 8px;
     font-size: 0.8rem;
 }
@@ -474,11 +481,18 @@ nav ul li a:hover {
 .product-name {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.product-name:hover {
+    color: var(--link-hover-color);
 }
 
 .product-price {
     font-weight: bold;
     margin-bottom: 1rem;
+    color: var(--link-hover-color);
 }
 
 .add-to-cart {
@@ -499,7 +513,7 @@ nav ul li a:hover {
 
 .wishlist-icon {
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 5px;
     width: 40px;
     height: 30px;
@@ -508,13 +522,8 @@ nav ul li a:hover {
     background-position: center;
     border: none;
     cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
-.product-card:hover .wishlist-icon {
-    opacity: 1;
-}
 
 .wishlist-icon.is-toggled {
     background-image: url(images/heart-filled.svg);
