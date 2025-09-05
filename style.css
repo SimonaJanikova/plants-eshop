@@ -26,7 +26,6 @@ body {
 }
 
 /*HEADER*/
-
 header {
     display: flex;
     align-items: center;
@@ -515,43 +514,66 @@ nav ul li a:hover {
     position: absolute;
     top: 10px;
     right: 5px;
-    width: 40px;
-    height: 30px;
     background: url(images/heart-green.svg);
     background-repeat: no-repeat;
     background-position: center;
     border: none;
     cursor: pointer;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: rgba(58, 115, 8, 0.1);
+    opacity: 1 !important;
 }
-
 
 .wishlist-icon.is-toggled {
     background-image: url(images/heart-filled.svg);
-    opacity: 1;
 }
 
 .wishlist-icon.is-loading::after {
   content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 16px;
-  height: 16px;
-  margin: -8px 0 0 -8px;
-  border: 2px solid #ccc;
-  border-top: 2px solid var(--button-color);
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.3rem;
   border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-  z-index: 10;
+  animation: spin 1s linear infinite;
 }
+
+.wishlist-icon > * {
+    color: var(--button-color);
+}
+
+.wishlist-icon.active {
+    color: var(--button-color);
+    background-color: rgba(51, 51, 51, 0.1);
+}
+
+.wishlist-icon.active > * {
+    color: var(--button-color);
+}
+
+.wishlist-icon.is-toggled, .wishlist-icon:hover, .wishlist-icon:focus {
+    color: var(--button-color) !important;
+    background-color: #1b660547 !important;
+}
+
+.wishlist-icon.is-toggled.is-loading::after, .wishlist-icon:hover.is-loading::after, .wishlist-icon:focus.is-loading::after {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-left-color: #ffffff;
+}
+
+.wishlist-icon.is-toggled > *, .wishlist-icon:hover > *, .wishlist-icon:focus > * {
+    color: #ffffff;
+}
+
+.wishlist-icon.is-loading > * {
+    color: blue;
+}
+
 
 @keyframes spin {
   100% { transform: rotate(360deg); }
 }
 
-.wishlist-icon.is-loading {
-  background-image: none;
-}
 
 
 /*PRODUCT SECTION - SCROLL*/
@@ -1250,6 +1272,7 @@ h3 {
         display: block;
         margin: 0 auto;
     }
+
 
     .footer-links {
         gap: 2rem;
