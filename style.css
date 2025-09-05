@@ -514,19 +514,16 @@ nav ul li a:hover {
     position: absolute;
     top: 10px;
     right: 5px;
-    background: url(images/heart-green.svg);
+    background-image: url(images/heart-green.svg);
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
     width: 2.2rem;
     height: 2.2rem;
     background-color: rgba(58, 115, 8, 0.1);
     opacity: 1 !important;
-}
-
-.wishlist-icon.is-toggled {
-    background-image: url(images/heart-filled.svg);
 }
 
 .wishlist-icon.is-loading::after {
@@ -552,8 +549,9 @@ nav ul li a:hover {
 }
 
 .wishlist-icon.is-toggled, .wishlist-icon:hover, .wishlist-icon:focus {
-    color: var(--button-color) !important;
+    background-image: url(images/heart-filled.svg)!important;
     background-color: #1b660547 !important;
+    transition: all 0.3s ease;
 }
 
 .wishlist-icon.is-toggled.is-loading::after, .wishlist-icon:hover.is-loading::after, .wishlist-icon:focus.is-loading::after {
