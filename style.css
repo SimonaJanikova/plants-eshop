@@ -29,7 +29,80 @@ button {
     padding: 0 1rem;
 }
 
+/* FLASH MESSAGE */
+
+.flash-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(116, 127, 44, 0.85);
+    padding: 0.5rem 1rem;
+}
+
+.flash-link {
+    text-decoration: none;
+    color: rgb(245, 240, 230);
+    flex: 1;
+    text-align: center;
+}
+
+.flash-link:hover {
+    text-decoration: none;
+}
+
+.close-banner-btn {
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.close-banner-btn:hover {
+    background-color: var(--button-color);
+}
+
+/* TOP-BAR */
+
+.top-bar-wrapper {
+    width: 100%;
+    background-color: rgba(126, 137, 54, 0.43);
+}
+
+.top-bar {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-contats {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.container-contats > * {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.container-contats a:hover {
+    color:rgb(104, 102, 98);
+}
+
 /* DROPDOWN-MENU */
+
+
+.dropdown-menu-title {
+    color: rgb(49, 47, 47);
+}
+
+.dropdown-menu-title:hover {
+    color:rgb(80, 78, 76);
+}
+
 .dropdown-menu-wrapper {
   position: relative;
   display: inline-block;
@@ -40,6 +113,7 @@ button {
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+    background-color: transparent;
 }
 
 
@@ -55,6 +129,7 @@ button {
 
 .dropdown-menu-content li {
   padding: 0.5rem 1rem;
+  list-style: none;
   cursor: pointer;
 }
 
@@ -66,7 +141,10 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
-    border-bottom: var(--border-color) solid 2px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    border-bottom: 2px solid var(--border-color);
 }
 
 .header-left {
@@ -141,38 +219,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-/* FLASH MESSAGE */
 
-.flash-message {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(116, 127, 44, 0.85);
-    padding: 0.5rem 1rem;
-}
-
-.flash-link {
-    text-decoration: none;
-    color: rgb(245, 240, 230);
-    flex: 1;
-    text-align: center;
-}
-
-.flash-link:hover {
-    text-decoration: none;
-}
-
-.close-banner-btn {
-    background: none;
-    border: none;
-    color: rgb(255, 255, 255);
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.close-banner-btn:hover {
-    background-color: var(--button-color);
-}
 
 /* SEARCH CONTAINER */
 
