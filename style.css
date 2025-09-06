@@ -29,6 +29,37 @@ button {
     padding: 0 1rem;
 }
 
+/* DROPDOWN-MENU */
+.dropdown-menu-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu-wrapper button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+
+.dropdown-menu-content {
+  position: absolute;
+  top: 100%; 
+  z-index: 10;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.dropdown-menu-content li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+
+
 /*HEADER*/
 header {
     display: flex;
@@ -514,6 +545,8 @@ nav ul li a:hover {
     color: transparent;
 }
 
+
+/* WISHLIST-ICON */
 
 .wishlist-icon {
     width: 28px;
