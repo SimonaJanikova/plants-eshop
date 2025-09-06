@@ -151,36 +151,54 @@ button {
     color: var(--link-hover-color);
 }
 
-/*HEADER*/
-header {
+/* HEADER-TOP */
+
+.header-top {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0.5rem 0;
     border-bottom: 2px solid var(--border-color);
 }
 
-.header-left {
-    flex: 0 0 auto;
+.search-container {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    width: 450px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: rgba(252, 252, 250, 0.921);
 }
 
-.header-left a {
-    text-decoration: none;
-}
-
-.logo {
-    display: flex;
+.search-input {
     flex: 1;
-    justify-content: center;
-    align-items: center;
-    max-width: 320px;
-    width: 100%;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    background-color: transparent;
+}
+
+.search-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    color: var(--main-text-color);
+    cursor: pointer;
+}
+
+.mobile-search-btn i {
+    pointer-events: none;
+}
+
+/*HEADER-BOTTOM*/
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav a {
+    text-decoration: none;
 }
 
 .header-icons {
@@ -237,39 +255,7 @@ nav ul li a:hover {
 
 
 
-/* SEARCH CONTAINER */
 
-.search-container {
-    margin-left: auto;
-    display: flex;
-    width: 380px;
-    margin-top: 1rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-color: rgba(252, 252, 250, 0.921);
-}
-
-.search-input {
-    flex: 1;
-    border: none;
-    padding: 0.8rem 1rem;
-    font-size: 1rem;
-    outline: none;
-    background-color: transparent;
-}
-
-.search-btn {
-    border: none;
-    background-color: transparent;
-    padding: 0.8rem 1rem;
-    font-size: 1.2rem;
-    color: var(--main-text-color);
-    cursor: pointer;
-}
-
-.mobile-search-btn i {
-    pointer-events: none;
-}
 
 /* MAIN */
 
@@ -1376,4 +1362,51 @@ h3 {
     .footer-links a {
         color: rgb(118, 114, 114);
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.btn--wishlist {
+    width: 4.2rem;
+    height: 4.2rem;
+    color: #333333;
+    background-color: rgba(51, 51, 51, 0.1);
+    opacity: 1 !important;
+}
+.btn--wishlist.is-loading::after {
+    border: 1px solid rgba(51, 51, 51, 0.25);
+    border-left-color: #333333;
+}
+.btn--wishlist > * {
+    color: #333333;
+}
+.btn--wishlist.active {
+    color: #333333;
+    background-color: rgba(51, 51, 51, 0.1);
+}
+.btn--wishlist.active > * {
+    color: #333333;
+}
+.btn--wishlist.is-toggled, .btn--wishlist:hover, .btn--wishlist:focus {
+    color: #ffffff !important;
+    background-color: #FF1A43 !important;
+}
+.btn--wishlist.is-toggled.is-loading::after, .btn--wishlist:hover.is-loading::after, .btn--wishlist:focus.is-loading::after {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-left-color: #ffffff;
+}
+.btn--wishlist.is-toggled > *, .btn--wishlist:hover > *, .btn--wishlist:focus > * {
+    color: #ffffff;
+}
+.btn--wishlist.is-loading > * {
+    color: transparent;
 }
