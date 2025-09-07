@@ -114,16 +114,15 @@
 
         <!-- LOGO + SEARCH CONTAINER -->
         <header>
-            <div class="header-top">
+            <div class="header-top" js-id="header::sticky">
                 <img src="images/plant-store-logo.svg" alt="logo" class="logo">
                 <div class="search-container">
-                    <input type="text" class="search-input" placeholder="Hľadaj produkty...">
+                    <input type="text" name="name" id="name" autocomplete="off" class="search-input" placeholder="" js-id="action@load(writing_effect) ajax@input(front.search)#search" data-write="Monstera Deliciosa;Mimosa Pudica;Alocasia Dragon Scale;Lampášik">
                     <button class="search-btn"><i class="bi bi-search"></i></button>
                 </div>
             </div>
-        </header>
 
-        <div class="header-bottom">
+                    <div class="header-bottom">
             <nav class="header-nav">
                 <ul>
                     <li> <a href="">Obchod</a> </li>
@@ -150,6 +149,9 @@
                 </button>
             </div>
         </div>
+        </header>
+
+
 
 
         <!-- MAIN -->
