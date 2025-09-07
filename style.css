@@ -585,9 +585,21 @@ nav ul li a:hover {
     color: var(--link-hover-color);
 }
 
+.product-sum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    gap: 0.5rem;
+}
+
+.product-dph {
+    font-size: 0.8rem;
+    color: rgb(94, 90, 90);
+}
+
 .product-price {
     font-weight: bold;
-    margin-bottom: 1rem;
     color: var(--link-hover-color);
 }
 
