@@ -115,40 +115,55 @@
         <!-- LOGO + SEARCH CONTAINER -->
         <header>
             <div class="header-top" js-id="header::sticky">
-                <img src="images/plant-store-logo.svg" alt="logo" class="logo">
+                <a href="index.html">
+                    <img src="images/plant-store-logo.svg" alt="logo" class="logo">
+                </a>
+                
                 <div class="search-container">
-                    <input type="text" name="name" id="name" autocomplete="off" class="search-input" placeholder="" js-id="action@load(writing_effect) ajax@input(front.search)#search" data-write="Monstera Deliciosa;Mimosa Pudica;Alocasia Dragon Scale;Lampášik">
+                    <input type="text" name="name" id="name" autocomplete="off" class="search-input" placeholder=""
+                        js-id="action@load(writing_effect) ajax@input(front.search)#search"
+                        data-write="Monstera Deliciosa;Mimosa Pudica;Alocasia Dragon Scale;Zamiokulkas">
                     <button class="search-btn"><i class="bi bi-search"></i></button>
+
+                    <div class="search-result" js-id="dropdown template::front.search.products#front.search variable::front.search.products.open">
+                        <a href="#" class="search-result-product">
+                            <img src="images/monstera-deliciosa.jpg" alt="Monstera Deliciosa" class="search-result-img">
+                            <div class="search-results-product-info">
+                                <h4>Monstera</h4>
+                                <p>4.99</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-                    <div class="header-bottom">
-            <nav class="header-nav">
-                <ul>
-                    <li> <a href="">Obchod</a> </li>
-                    <li> <a href="">Blog</a> </li>
-                    <li> <a href="">Knižnica</a> </li>
-                    <li> <a href="">O nás</a> </li>
-                    <li> <a href="">Kontakt</a> </li>
-                </ul>
-            </nav>
+            <div class="header-bottom">
+                <nav class="header-nav">
+                    <ul>
+                        <li> <a href="">Obchod</a> </li>
+                        <li> <a href="">Blog</a> </li>
+                        <li> <a href="">Knižnica</a> </li>
+                        <li> <a href="">O nás</a> </li>
+                        <li> <a href="">Kontakt</a> </li>
+                    </ul>
+                </nav>
 
-                     <div class="header-icons">
-                <div class="auth-links">
-                    <a class="icon-btn login-btn" href="login.html">Prihlásenie</a>
-                    <span>/</span>
-                    <a class="icon-btn reg-btn" href="registration.html">Registrácia</a>
+                <div class="header-icons">
+                    <div class="auth-links">
+                        <a class="icon-btn login-btn" href="login.html">Prihlásenie</a>
+                        <span>/</span>
+                        <a class="icon-btn reg-btn" href="registration.html">Registrácia</a>
+                    </div>
+
+                    <a href="login.html" class="icon-btn profile-btn"><i class="bi bi-person-circle"></i></a>
+
+                    <button class="icon-btn fav-btn"> <i class="bi bi-heart"></i> </button>
+
+                    <button type="button" class="icon-btn cart-btn" js-id="modal@click(open)#minicart">
+                        <i class="bi bi-bag"></i>
+                    </button>
                 </div>
-
-                <a href="login.html" class="icon-btn profile-btn"><i class="bi bi-person-circle"></i></a>
-
-                <button class="icon-btn fav-btn"> <i class="bi bi-heart"></i> </button>
-
-                <button type="button" class="icon-btn cart-btn" js-id="modal@click(open)#minicart">
-                    <i class="bi bi-bag"></i>
-                </button>
             </div>
-        </div>
         </header>
 
 
@@ -215,10 +230,10 @@
                         </button>
                     </div>
                     <a href="#" class="product-name">Monstera Deliciosa</a>
-                        <div class="product-sum">
-                            <p class="product-price">24.90€</p>
-                            <p class="product-dph">s DPH</p>
-                        </div>
+                    <div class="product-sum">
+                        <p class="product-price">24.90€</p>
+                        <p class="product-dph">s DPH</p>
+                    </div>
                     <button type="button" class="add-to-cart">Pridať do košíka</button>
                 </article>
 
@@ -236,10 +251,10 @@
                         </button>
                     </div>
                     <a href="#" class="product-name">Monstera Deliciosa</a>
-                        <div class="product-sum">
-                            <p class="product-price">24.90€</p>
-                            <p class="product-dph">s DPH</p>
-                        </div>
+                    <div class="product-sum">
+                        <p class="product-price">24.90€</p>
+                        <p class="product-dph">s DPH</p>
+                    </div>
                     <button type="button" class="add-to-cart">Pridať do košíka</button>
                 </article>
 
@@ -257,10 +272,10 @@
                         </button>
                     </div>
                     <a href="#" class="product-name">Monstera Deliciosa</a>
-                        <div class="product-sum">
-                            <p class="product-price">24.90€</p>
-                            <p class="product-dph">s DPH</p>
-                        </div>
+                    <div class="product-sum">
+                        <p class="product-price">24.90€</p>
+                        <p class="product-dph">s DPH</p>
+                    </div>
                     <button type="button" class="add-to-cart">Pridať do košíka</button>
                 </article>
 
@@ -276,13 +291,13 @@
                             data-data='{"wishlist_product_id": 4}'>
                             <i class="bi bi-heart-fill"></i>
                         </button>
-                        
+
                     </div>
                     <a href="#" class="product-name">Monstera Deliciosa</a>
-                        <div class="product-sum">
-                            <p class="product-price">24.90€</p>
-                            <p class="product-dph">s DPH</p>
-                        </div>
+                    <div class="product-sum">
+                        <p class="product-price">24.90€</p>
+                        <p class="product-dph">s DPH</p>
+                    </div>
                     <button type="button" class="add-to-cart">Pridať do košíka</button>
                 </article>
 
@@ -303,10 +318,10 @@
                         </button>
                     </div>
                     <a href="#" class="product-name">Monstera Deliciosa</a>
-                        <div class="product-sum">
-                            <p class="product-price">24.90€</p>
-                            <p class="product-dph">s DPH</p>
-                        </div>
+                    <div class="product-sum">
+                        <p class="product-price">24.90€</p>
+                        <p class="product-dph">s DPH</p>
+                    </div>
                     <button type="button" class="add-to-cart">Pridať do košíka</button>
                 </article>
 
@@ -325,10 +340,10 @@
                         </button>
                     </div>
                     <h3 class="product-name">Monstera Deliciosa</h3>
-                        <div class="product-sum">
-                            <p class="product-price">24.90€</p>
-                            <p class="product-dph">s DPH</p>
-                        </div>
+                    <div class="product-sum">
+                        <p class="product-price">24.90€</p>
+                        <p class="product-dph">s DPH</p>
+                    </div>
                     <button type="button" class="add-to-cart">Pridať do košíka</button>
                 </article>
             </div>
