@@ -31,10 +31,16 @@
     <section class="top-bar-wrapper">
         <div class="top-bar">
             <div class="container-contats">
-                <i class="bi bi-envelope"></i>
-                <a href="mailto:podpora@plants.sk">podpora@plants.sk</a>
-                <i class="bi bi-telephone"></i>
-                <a href="tel:+421 950 624 873">+421 950 624 873</a>
+                <div class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    <a href="mailto:podpora@plants.sk">podpora@plants.sk</a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <a href="tel:+421 950 624 873">+421 950 624 873</a>
+                </div>
+
             </div>
 
             <div class="dropdown-menu-wrapper" js-id="dropdown@click#currency">
@@ -88,7 +94,7 @@
     <!-- MOBILE NAV HAMBURGR -->
 
     <div class="container">
-        <button class="hamburger" id="hamburger"><i class="bi bi-list"></i></button>
+
 
         <nav class="mobile-menu" id="mobileMenu">
             <div class="mobile-top">
@@ -115,6 +121,7 @@
         <!-- LOGO + SEARCH CONTAINER -->
         <header>
             <div class="header-top" js-id="header::sticky">
+                        <button class="hamburger" id="hamburger"><i class="bi bi-list"></i></button>
                 <a href="index.html">
                     <img src="images/plant-store-logo.svg" alt="logo" class="logo">
                 </a>
@@ -125,7 +132,31 @@
                         data-write="Monstera Deliciosa;Mimosa Pudica;Alocasia Dragon Scale;Zamiokulkas">
                     <button class="search-btn"><i class="bi bi-search"></i></button>
 
-                    <div class="search-result" js-id="dropdown template::front.search.products#front.search variable::front.search.products.open">
+                    <div class="search-result is-hidden" js-id="dropdown template::front.search.products#front.search variable::front.search.products.open">
+                        <a href="#" class="search-result-product">
+                            <img src="images/monstera-deliciosa.jpg" alt="Monstera Deliciosa" class="search-result-img">
+                            <div class="search-results-product-info">
+                                <h4>Monstera Deliciosa</h4>
+                                <p>4.99 €</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="search-result-product">
+                            <img src="images/mimosa-pudica.webp" alt="Monstera Deliciosa" class="search-result-img">
+                            <div class="search-results-product-info">
+                                <h4>Mimosa Pudica Sensitiva</h4>
+                                <p>15.99 €</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="search-result-product">
+                            <img src="images/monstera-deliciosa.jpg" alt="Monstera Deliciosa" class="search-result-img">
+                            <div class="search-results-product-info">
+                                <h4>Monstera</h4>
+                                <p>4.99</p>
+                            </div>
+                        </a>
+
                         <a href="#" class="search-result-product">
                             <img src="images/monstera-deliciosa.jpg" alt="Monstera Deliciosa" class="search-result-img">
                             <div class="search-results-product-info">
