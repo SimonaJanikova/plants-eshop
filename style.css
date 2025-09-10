@@ -1753,46 +1753,67 @@ h3 {
 
     /* HEADER */
     .sidebar,
-    .auth-links {
+    .auth-links,
+    .header-icons {
         display: none;
     }
 
-    
    .header-top {
     display: flex;
     flex-direction: column;
+     width: 100%;
   }
 
   .header-top-inner {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    gap: 10px;
-  }
+  display: flex;
+  flex-direction: row; /* hamburger + logo + ikonky */
+  align-items: center;
+  justify-content: space-between; /* rovnomerné medzery */
+  width: 100%;
 
-  .hamburger {
-    flex: 0 0 auto;
-  }
+}
 
-  .logo {
-    flex: 1 1 auto;
-    max-height: 40px;
-    margin: 0 10px;
-  }
+.hamburger,
+.header-icons-mobile {
+  flex: 0 0 auto; /* nemenia veľkosť */
+}
+
+.logo {
+  flex: 1 1 auto;      /* roztiahne logo medzi hamburger a ikonky */
+  width: 80%;    /* zaberie polovicu priestoru */
+  height: auto;  /* zachová proporcie */
+
+  display: block;
+  padding: 0 10px;
+  margin: 0 auto;      /* centrovanie loga */
+}
 
   .header-icons-mobile {
     display: flex;
     margin-left: auto;
     gap: 10px;
-    align-items: center;
   }
 
-  .search-container {
-    width: 100%;
-    margin-top: 10px;
+    .profile-btn {
+    display: flex;
   }
 
+.search-container {
+  width: 100%;
+  padding: 0 10px;   /* rovnaké ako horný riadok */
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.header-nav {
+  width: 100%;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-between; /* rozťahuje li na celých 100 % */
+  width: 100%;
+}
     /* MAIN IMG FLOWER */
 
     .main-section {
