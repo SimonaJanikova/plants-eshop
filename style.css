@@ -809,6 +809,10 @@ body {
     gap: 1rem;
 }
 
+.header-icons-mobile {
+    display: none;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -1753,10 +1757,41 @@ h3 {
         display: none;
     }
 
+    
+   .header-top {
+    display: flex;
+    flex-direction: column;
+  }
 
-   
+  .header-top-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
 
+  .hamburger {
+    flex: 0 0 auto;
+  }
 
+  .logo {
+    flex: 1 1 auto;
+    max-height: 40px;
+    margin: 0 10px;
+  }
+
+  .header-icons-mobile {
+    display: flex;
+    margin-left: auto;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-top: 10px;
+  }
 
     /* MAIN IMG FLOWER */
 

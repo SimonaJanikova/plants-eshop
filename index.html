@@ -121,18 +121,29 @@
         <!-- LOGO + SEARCH CONTAINER -->
         <header>
             <div class="header-top" js-id="header::sticky">
-                        <button class="hamburger" id="hamburger"><i class="bi bi-list"></i></button>
-                <a href="index.html">
-                    <img src="images/plant-store-logo.svg" alt="logo" class="logo">
-                </a>
-                
+                <div class="header-top-inner">
+                    <button class="hamburger" id="hamburger"><i class="bi bi-list"></i></button>
+                    <a href="index.html">
+                        <img src="images/plant-store-logo.svg" alt="logo" class="logo">
+                    </a>
+                    <div class="header-icons-mobile">
+
+                        <a href="login.html" class="icon-btn profile-btn"><i class="bi bi-person-circle"></i></a>
+                        <button class="icon-btn fav-btn"><i class="bi bi-heart"></i></button>
+                        <button type="button" class="icon-btn cart-btn" js-id="modal@click(open)#minicart">
+                            <i class="bi bi-bag"></i>
+                        </button>
+                    </div>
+                </div>
+
                 <div class="search-container">
                     <input type="text" name="name" id="name" autocomplete="off" class="search-input" placeholder=""
                         js-id="action@load(writing_effect) ajax@input(front.search)#search"
                         data-write="Monstera Deliciosa;Mimosa Pudica;Alocasia Dragon Scale;Zamiokulkas">
                     <button class="search-btn"><i class="bi bi-search"></i></button>
 
-                    <div class="search-result is-hidden" js-id="dropdown template::front.search.products#front.search variable::front.search.products.open">
+                    <div class="search-result is-hidden"
+                        js-id="dropdown template::front.search.products#front.search variable::front.search.products.open">
                         <a href="#" class="search-result-product">
                             <img src="images/monstera-deliciosa.jpg" alt="Monstera Deliciosa" class="search-result-img">
                             <div class="search-results-product-info">
