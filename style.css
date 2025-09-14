@@ -621,6 +621,7 @@ body {
 
 .container {
     max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -1550,8 +1551,11 @@ footer {
 
 .footer-content {
     display: flex;
-    width: 1400px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
     border-top: var(--border-color) 2px solid;
+    border-bottom: var(--border-color) 2px solid;
     justify-content: center;
     box-sizing: border-box;
 }
@@ -1671,7 +1675,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: var(--border-color) 2px solid;
 }
 
 .footer-bottom a {
@@ -1792,6 +1795,7 @@ h3 {
 .filter-menu input[type="checkbox"] {
     margin-right: 0.5rem;
 }
+
 
 
 /* DESKTOP */
