@@ -813,7 +813,7 @@ body {
     top: 100%;
     left: 0;
     right: 0;
-    background: rgba(252, 252, 250, 0.921);
+    background: rgb(252, 252, 250);
     border: 1px solid rgba(0, 0, 0, 0.171);
     max-height: 340px;
     overflow-y: auto;
@@ -1680,9 +1680,6 @@ footer {
     color: var(--link-hover-color);
 }
 
-
-
-
 /* SUBPAGE FLOWERS */
 
 h3 {
@@ -1831,40 +1828,49 @@ h3 {
 
     .header-top-inner {
         display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content: space-between;
         width: 100%;
     }
 
-    .hamburger,
-    .header-icons-mobile {
+    .hamburger {
         flex: 0 0 auto;
+        margin-right: auto;
     }
 
     .logo {
-        flex: 1 1 auto;
+        flex: 0 0 auto;
         width: 80%;
-        height: auto;
         display: block;
-        padding: 0 10px;
         margin: 0 auto;
+        padding: 0 10px;
     }
 
     .header-icons-mobile {
         display: flex;
-        margin-left: auto;
         gap: 10px;
+        margin-left: auto;
     }
 
     .profile-btn {
         display: flex;
     }
 
-    .search-container {
-        width: 100%;
-        box-sizing: border-box;
+    /* SEARCH CONTAINER */
 
+    .search-container {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        margin: 1rem 0;
+        box-sizing: border-box;
+    }
+
+    .search-input {
+        flex: 1;
+    }
+
+    .search-btn {
+        flex: 0 0 auto;
     }
 
     .header-nav ul {
@@ -1884,13 +1890,6 @@ h3 {
         padding-left: 0;
     }
 
-    /* MOBILE SEARCH */
-
-    .search-container {
-        display: flex;
-        width: 90%;
-        margin: 1rem auto;
-    }
 
     /* PRODUCT SECTION */
 
@@ -2009,33 +2008,66 @@ h3 {
 
     .header-left,
     .sidebar,
-    .auth-links {
+    .auth-,
+    .header-icons {
         display: none;
     }
 
-    header {
-        padding-bottom: 0;
+    .header-top {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-top-inner {
+        display: flex;
+        align-items: center;
+        width: 100%;
     }
 
     .hamburger {
         display: block;
-        padding-top: 1rem;
+        flex: 0 0 auto;
+        margin-right: auto;
     }
 
-    .icon-btn {
+    .logo {
         display: block;
-        padding-top: 1rem;
+        width: 80%;
+        height: auto;
+        padding: 0 10px;
+        margin: 0 auto;
+        flex: 0 0 auto;
     }
 
-    .header-icons {
+    .header-icons-mobile {
         display: flex;
-        gap: 0.5rem;
+        flex: 0 0 auto;
+        margin-left: auto;
+        gap: 10px;
+    }
+
+    .profile-btn {
+        display: flex;
+    }
+
+    .search-container {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 1rem 0;
+    }
+
+    .header-nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .content {
         border-left: none;
         padding-left: 0;
     }
+
 
     /* FOOTER */
 
