@@ -836,6 +836,10 @@ body {
     color: var(--main-text-color);
 }
 
+.search-result-product:hover {
+    background-color: rgba(95, 104, 33, 0.077);
+}
+
 .search-result-img {
     max-width: 90px;
     height: auto;
