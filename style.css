@@ -1802,6 +1802,16 @@ h3 {
     display: none;
 }
 
+/* PRODUCTS GRID */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+
+
 /* DESKTOP */
 
 @media (min-width: 768px) {
