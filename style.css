@@ -1708,10 +1708,11 @@ h3 {
 
 .filter-wrapper {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 3rem;
     margin-bottom: 2rem;
     width: 100%;
-    justify-content: space-between;
 }
 
 .filter-options a {
@@ -1748,6 +1749,7 @@ h3 {
     box-shadow: 0px 2px 10px rgba(95, 104, 33, 0.225);
     padding: 15px;
     background-color: rgba(202, 206, 182, 0.16);
+    cursor: pointer;
 }
 
 .filter-btn:hover {
@@ -1796,15 +1798,14 @@ h3 {
     margin-right: 0.5rem;
 }
 
-
+.sort-dropdown-mobile {
+    display: none;
+}
 
 /* DESKTOP */
 
 @media (min-width: 768px) {
-    .mobile-menu {
-        display: none;
-    }
-
+    .mobile-menu,
     .hamburger {
         display: none;
     }
@@ -2016,6 +2017,33 @@ h3 {
         text-align: center;
         gap: 0.5rem;
     }
+
+    /* SUBPAGE FLOWERS */
+
+    .filter-options {
+        display: none; /* linky skryť */
+    }
+
+    .filter-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sort-dropdown-mobile {
+        display: block;
+        order: 1; /* teraz vľavo */
+        width: 48%;
+        text-align: left; /* tlačidlo vľavo */
+    }
+
+    /* CHECKBOX filter napravo */
+    .checkbox-filter {
+        display: block;
+        order: 2; /* teraz napravo */
+        width: 48%;
+        text-align: right; /* tlačidlo napravo */
+    }
 }
 
 /* TABLET */
@@ -2143,5 +2171,29 @@ h3 {
 
     .footer-links a {
         color: rgb(118, 114, 114);
+    }
+
+    /* SUBPAGE FLOWERS */
+
+    .filter-options {
+        display: none;
+    }
+
+    .filter-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sort-dropdown-mobile {
+        display: block;
+        order: 1;
+        text-align: left;
+    }
+
+    .checkbox-filter {
+        display: block;
+        order: 2;
+        text-align: right;
     }
 }
