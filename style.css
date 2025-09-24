@@ -2021,7 +2021,7 @@ h3 {
     /* SUBPAGE FLOWERS */
 
     .filter-options {
-        display: none; /* linky skryť */
+        display: none;
     }
 
     .filter-wrapper {
@@ -2032,17 +2032,15 @@ h3 {
 
     .sort-dropdown-mobile {
         display: block;
-        order: 1; /* teraz vľavo */
-        width: 48%;
-        text-align: left; /* tlačidlo vľavo */
+        order: 1;
+        text-align: left;
     }
 
-    /* CHECKBOX filter napravo */
+
     .checkbox-filter {
         display: block;
-        order: 2; /* teraz napravo */
-        width: 48%;
-        text-align: right; /* tlačidlo napravo */
+        order: 2;
+        text-align: right;
     }
 }
 
