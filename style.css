@@ -1864,11 +1864,15 @@ h3 {
 }
 
 .sidebar-subpage ul li ul.is-collapse {
-    display: none;
+    max-height: 0;       /* zatvorené */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 1.5rem; /* odsadenie */
 }
 
+/* podzoznam otvorený (framework pridáva túto triedu) */
 .sidebar-subpage ul li ul.is-collapsed {
-    display: block;
+    max-height: 500px;   /* dosť veľké, aby sa zmestili všetky položky */
 }
 
 /* DESKTOP */
