@@ -1841,7 +1841,7 @@ h3 {
     position: relative;
     display: flex;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -1864,11 +1864,11 @@ h3 {
 }
 
 .sidebar-subpage ul li ul.is-collapse {
-  display: none;
+    display: none;
 }
 
 .sidebar-subpage ul li ul.is-collapsed {
-  display: block;
+    display: block;
 }
 
 /* DESKTOP */
@@ -2112,6 +2112,10 @@ h3 {
         order: 2;
         text-align: right;
     }
+
+    .sidebar-subpage {
+        display: none;
+    }
 }
 
 /* TABLET */
@@ -2263,5 +2267,9 @@ h3 {
         display: block;
         order: 2;
         text-align: right;
+    }
+
+    .sidebar-subpage {
+        display: none;
     }
 }
