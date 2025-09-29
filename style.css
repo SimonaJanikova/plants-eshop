@@ -967,6 +967,7 @@ nav ul li a:hover {
     display: inline-block;
     transform: rotate(45deg);
     font-size: 2rem;
+    margin-right: auto;
 }
 
 .content {
