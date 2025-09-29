@@ -938,7 +938,6 @@ nav ul li a:hover {
 .sidebar {
     flex: 1 1 250px;
     max-width: 300px;
-    margin-top: 3rem;
 }
 
 .sidebar a {
@@ -953,9 +952,9 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     color: var(--main-text-color);
-    margin-bottom: 1.3rem;
+    padding-bottom: 1.5rem;
 }
 
 .sidebar ul li a:hover {
@@ -967,7 +966,7 @@ nav ul li a:hover {
 .sidebar ul li i {
     display: inline-block;
     transform: rotate(45deg);
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .content {
@@ -1129,7 +1128,7 @@ nav ul li a:hover {
 }
 
 .mobile-top {
-    padding: 1rem;
+    padding: 0rem;
 }
 
 .mobile-bottom {
@@ -1145,8 +1144,6 @@ nav ul li a:hover {
 
 .mobile-menu ul li {
     border-bottom: 1px solid rgb(204, 204, 204);
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.5rem;
 }
 
 .mobile-menu ul li:last-child {
@@ -1811,68 +1808,72 @@ h3 {
     margin-top: 2rem;
 }
 
-.sidebar-subpage {
-    flex: 0 0 200px;
-    background: #f5f5f5;
-    border-radius: 8px;
-    margin-top: 0;
-}
-
 .articles-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 }
 
-.sidebar-icon {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    transform: translateY(10px);
+/* SIDEBAR */
+.sidebar-subpage {
+    width: 500px;
 }
 
-.sidebar-subpage ul {
+.menu {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.sidebar-subpage li {
-    position: relative;
-    display: flex;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
+.menu > li {
+    border-bottom: 1px solid #ddd;
 }
 
-
-.sidebar-subpage li img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-    position: relative;
-    top: -10px;
-}
-
-.sidebar-subpage ul li a {
+.menu a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1rem;
+    padding: 1.1rem;
     text-decoration: none;
-    color: var(--main-text-color);
-    flex: 1;
+    color: rgb(0, 0, 0);
 }
 
-.sidebar-subpage ul li ul.is-collapse {
-    max-height: 0;       /* zatvorené */
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    padding-left: 1.5rem; /* odsadenie */
+.text-wrapper {
+    display: flex;
+    align-items: center;
 }
 
-/* podzoznam otvorený (framework pridáva túto triedu) */
-.sidebar-subpage ul li ul.is-collapsed {
-    max-height: 500px;   /* dosť veľké, aby sa zmestili všetky položky */
+.sidebar-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transform: translateY(3px);
+}
+
+.is-collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  list-style: none;
+  padding-left: 10px;
+}
+
+.is-collapse > li > a {
+    color:rgb(118, 114, 114);
+}
+
+.is-collapsed {
+  max-height: 500px;
+}
+
+.menu li > a > i:last-child {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.menu li.is-active > a > i:last-child,
+.menu li.is-collapsed > a > i:last-child {
+  transform: rotate(180deg);
 }
 
 /* DESKTOP */
