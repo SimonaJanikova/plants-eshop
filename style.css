@@ -1122,14 +1122,9 @@ nav ul li a:hover {
     z-index: 9999;
 }
 
-
 .mobile-menu.active {
     display: flex;
     transform: translateX(0);
-}
-
-.mobile-top {
-    padding: 0rem;
 }
 
 .mobile-bottom {
@@ -1188,7 +1183,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 10px;
+    padding: 3px 10px;
     text-decoration: none;
     color: var(--main-text-color);
 }
