@@ -29,9 +29,6 @@ function showError(message) {
     errorContainer.appendChild(errorMsg);
 }*/
 
-// kosik 
-
-
     
 
 // HAMBURGER MENU
