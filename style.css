@@ -1204,6 +1204,15 @@ nav ul li a:hover {
     transform: rotate(180deg);
 }
 
+.mobile-menu .is-collapse {
+    padding-top: 10px;
+}
+
+.mobile-menu .is-collapse li {
+    border-bottom: none !important;
+    padding: 0px;
+}
+
 /* PRODUCTS SECTION */
 
 .products {
@@ -1876,7 +1885,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.1rem;
+    padding: 1rem;
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
