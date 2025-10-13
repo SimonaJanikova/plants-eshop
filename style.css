@@ -924,8 +924,6 @@ body.login-form-body .footer-content {
     transform: rotate(180deg);
 }
 
-
-
 .mobile-menu .is-collapse li {
     border-bottom: none !important;
     padding: 0px;
@@ -933,6 +931,10 @@ body.login-form-body .footer-content {
 
 .mobile-menu .is-collapse li a {
     font-size: 0.8rem;
+}
+
+.mobile-menu .text-wrapper {
+    padding: 5px;
 }
 
 /* PRODUCTS SECTION */
