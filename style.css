@@ -886,6 +886,10 @@ body.login-form-body .footer-content {
     padding: 10px;
 }
 
+.menu-hamburger {
+    gap: 0;
+}
+
 .menu-hamburger a {
     text-decoration: none;
 }
@@ -920,9 +924,7 @@ body.login-form-body .footer-content {
     transform: rotate(180deg);
 }
 
-.mobile-menu .is-collapse {
-    padding-top: 10px;
-}
+
 
 .mobile-menu .is-collapse li {
     border-bottom: none !important;
