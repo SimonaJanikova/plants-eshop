@@ -601,11 +601,23 @@ nav ul li a:hover {
 }
 
 .icon-btn {
+    position: relative;
     border: none;
     font-size: 1rem;
     color: var(--main-text-color);
     text-decoration: none;
     background-color: transparent;
+}
+
+.icon-badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: var(--button-color); 
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 50%;
 }
 
 .login-btn:hover,
