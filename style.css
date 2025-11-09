@@ -642,54 +642,51 @@ nav ul li a:hover {
 
 .main-section {
     display: flex;
-    align-items: center;
     padding-top: 0.5rem;
     border-bottom: var(--border-color) solid 2px;
     padding-bottom: 2rem;
 }
 
-.sidebar {
-    display: flex;
-    max-width: 300px;
-    padding-right: 2rem;
+.sidebar-main-page {
+    flex: 0 0 250px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 1rem;
 }
 
-.sidebar a {
-    text-decoration: none;
+.sidebar-main-page ul li {
+    border-bottom: none;
 }
 
-.sidebar ul {
-    list-style: none;
+.sidebar-main-page ul li:first-child a {
+    padding-top: 0;
 }
 
-.sidebar ul li {
-    padding-bottom: 2rem;
-}
-
-.sidebar ul li a {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 1.5rem;
+.sidebar-main-page ul li a {
+    font-size: 1.2rem;
     color: var(--main-text-color);
+    padding-right: 0.5rem;
 }
 
-.sidebar ul li a:hover {
+.sidebar-main-page ul li a:hover {
     color: var(--link-hover-color);
-    cursor: pointer;
-    text-decoration: none;
 }
 
-.sidebar ul li i {
-    display: inline-block;
-    transform: rotate(45deg);
-    font-size: 2rem;
-    margin-right: auto;
+.sidebar-main-page ul.is-collapse li a {
+    color: rgb(118, 114, 114);
+    font-size: 1.1rem;
+}
+
+.sidebar-main-page ul.is-collapse li a:hover {
+    color: var(--link-hover-color);
+}
+
+.sidebar-main-page ul.is-collapse li {
+    padding-left: 1rem;
 }
 
 .content {
-    flex: 2 1 0;
-    max-width: 100%;
+    flex: 1;
     border-left: var(--border-color) solid 2px;
     padding-left: 2rem;
 }
@@ -699,6 +696,31 @@ nav ul li a:hover {
     height: auto;
     max-width: 100%;
     display: block;
+}
+
+/* SCROLLBAR */
+.sidebar-main-page::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar-main-page::-webkit-scrollbar-track {
+    border-radius: 4px;
+}
+
+.sidebar-main-page::-webkit-scrollbar-thumb {
+    background-color: var(--button-color);
+    border-radius: 4px;
+    border: 2px solid #f0f0f0;
+}
+
+.sidebar-main-page::-webkit-scrollbar-thumb:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* SCROLLBAR-FIREFOX */
+.sidebar-main-page {
+    scrollbar-width: thin;
+    scrollbar-color: var(--button-color) #f0f0f0;
 }
 
 /* LOGIN */
@@ -945,10 +967,11 @@ body.login-form-body .footer-content {
 
 .mobile-menu .is-collapse li a {
     font-size: 0.8rem;
+    padding-left: 1rem;
 }
 
 .mobile-menu .text-wrapper {
-    padding: 15px;
+    padding: 0.5rem;
 }
 
 /* PRODUCTS SECTION */
@@ -1647,6 +1670,7 @@ h3 {
 
 .is-collapse>li>a {
     color: rgb(118, 114, 114);
+    padding-left: 1rem;
 }
 
 .is-collapsed {
@@ -1689,7 +1713,7 @@ h3 {
     }
 
     /* HEADER */
-    .sidebar,
+    .sidebar-main-page,
     .auth-links,
     .header-icons {
         display: none;
